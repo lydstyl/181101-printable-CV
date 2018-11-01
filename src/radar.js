@@ -1,21 +1,20 @@
 import Chart from 'chart.js';
 var ctx = document.getElementById("myChart").getContext('2d');
 
-// BOOTSTRAP, FOUNDATION, JQUERY ['Javascript', 'Python', 'PHP', 'CSS', 'Git', 'Node.js', 'Django', 'Codeigniter', 'Webpack', 'Sass', 'Firebase']
 var myChart = new Chart(ctx, {
     type: 'radar',
     data: {
-        labels: ['Javascript front', 'Vue.js', 'Sass', 'Node.js', 'Django', 'Codeigniter', 'Git'],
+        labels: ['Javascript', 'Vue.js', 'Sass', 'Node.js', 'Python / Django', 'PHP / Codeigniter', 'Git'],
         datasets: [
             {
                 label: 'aujourd\'hui',
-                data: [7, 0, 8, 4, 5, 6, 10],
-                backgroundColor: 'rgba(0, 0, 255, 0.2)'
+                data: [8, 0, 8, 4, 5, 6, 10],
+                backgroundColor: 'rgba(40, 167, 69, 0.3)'
             },
             {
-                label: 'objectif',
-                data: [8, 4, 8, 8, 6, 6, 10],
-                backgroundColor: 'rgba(255, 0, 0, 0.1)'
+                label: 'objectifs',
+                data: [9, 5, 9, 8, 7, 6, 10],
+                backgroundColor: 'rgba(40, 167, 69, 0.1)'
             }
         ]
     },
