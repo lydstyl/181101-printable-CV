@@ -14,15 +14,11 @@ var myChart = new Chart(ctx, {
             },
             {
                 label: 'objectif',
-                data: [7, 8, 8, 8, 8, 6, 10],
+                data: [8, 4, 8, 8, 6, 6, 10],
                 backgroundColor: 'rgba(255, 0, 0, 0.1)'
             }
         ]
     },
     options: {
-        // scale: {
-        //     // Hides the scale
-        //     display: true
-        // }
     }
 });

@@ -3,6 +3,3 @@ import './main.sass';
 // test();
 
 import './radar.js';
-
-console.log('test');
-

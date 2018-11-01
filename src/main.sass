@@ -1,11 +1,21 @@
 // Your variable overrides
 // $body-bg: lightgrey
-$body-color: green
+// $body-color: green
 
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap"
-    
 
-canvas
-    max-width: 400px
-    margin: auto
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+.custom-class
+  display: none
+
+@include media-breakpoint-up(sm)
+  .custom-class
+    display: block
+  
+.chart
+    // height: 300px
+    canvas
+        max-width: 800px
+        margin: auto
