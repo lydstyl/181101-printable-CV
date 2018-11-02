@@ -11,8 +11,10 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+      // filename: devMode ? '[name].css' : '[name].[hash].css',
+      // chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
@@ -39,5 +41,5 @@ module.exports = {
   watchOptions: {
     ignored: /node_modules/
   },
-  mode: 'development'
+  mode: 'production'
 };
