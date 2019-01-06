@@ -4,7 +4,7 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'radar',
     data: {
-        labels: ['Javascript / Jquery', 'Vue.js ou React.js', 'CSS / Sass', 'Node.js', 'Python / Django', 'PHP / Codeigniter', 'Git'],
+        labels: ['Vanilla JS  / Jquery', 'Vue.js, React.js, ...', 'CSS / Sass', 'Node.js', 'Python / Django', 'PHP / Codeigniter', 'Git'],
         datasets: [
             {
                 label: 'aujourd\'hui',
